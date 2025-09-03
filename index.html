@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="./images/sgc.ico" type="image/x-icon">
+  <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"defer></script>
+   <script src="https://kit.fontawesome.com/46b7ceee20.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=psychology" />
+
+  <title>Animated website</title>
+</head>
+<body>
+  <nav class="container">
+      <ul class = "side">
+     <li class="hideside"><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+     <li><a href="#contactme">Contact Me</a></li>
+     <li><a href="#project">Projects</a></li>
+     <li><a href="#pds">Products</a></li>
+     <li><a href="#skill">Progress</a></li>
+     <li><a href="#" class ="loginshow">Login</a></li>
+    </ul>
+    <ul class="fixedbar">
+     <li><a href="#">SGC</a></li>
+     <li class = "phonehidden"><a href="#contactme">Contact Me</a></li>
+     <li class = "phonehidden"><a href="#project">Projects</a></li>
+     <li class = "phonehidden"><a href="#pds">Products</a></li>
+     <li class = "phonehidden"><a href="#skill">Progress</a></li>
+     <li class = "phonehidden" id ="fixedlogshow" ><a href="#">Login</a></li>
+     <li class="laptophidden"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+    </ul>
+    </nav>
+
+  <form action = "post" class="main-box" >
+    <div class="content-box">
+      <div class="login-d">
+        <input type="text" name="username" id="username" class="inputs" required>
+        <label for="username" class="label">Username</label>
+          <i class='bx  bx-user icon'  ></i> 
+        </div>
+        <div class="login-d">
+        <input type="password" id="password" class = "inputs" required>
+        <label for="password" class="label">Password</label>
+        <i class='bx  bx-lock icon'  ></i> 
+        </div>
+        <div class="forgot-pass">
+          <div class="remember">
+             <input type="checkbox" id="checkbox">
+          <label for="checkbox">Remember Me</label>
+          </div>
+             <div class="forgot">
+             <a href="#" target="_blank">Forgot Password?</a>
+          </div>
+        </div>
+        <div class="login-d">
+          <input type="submit" value="Submit" class="submits">
+          </div>
+          <div class="new-user">
+            <span>Don't have an account <a href="#" id="newuser">Register here</a></span>
+          </div>
+          <div class="cont-without">
+            <span>
+              <button type="button" class="without-log">continue without login  ></button>
+            </span>
+          </div>
+    </div>
+  </form>
+   <div class="intro">
+<div class="svgs">
+  <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+  <defs>
+   Define the shape path with animation 
+    <path id="blob" fill="#d1d8e0"
+      d="M463,282Q448,314,430,341Q412,368,403,408.5Q394,449,354.5,449Q315,449,282.5,466Q250,483,217.5,466.5Q185,450,147.5,446Q110,442,92,410Q74,378,57,348Q40,318,28,284Q16,250,34.5,218Q53,186,58.5,150.5Q64,115,94,95.5Q124,76,152.5,56Q181,36,215.5,34.5Q250,33,283,39.5Q316,46,355,49Q394,52,403.5,91.5Q413,131,433,157.5Q453,184,465.5,217Q478,250,463,282Z">
+      <animate 
+        attributeName="d"
+        repeatCount="indefinite"
+        dur="15000ms"
+        values = "M435.5,275.5Q407,301,420,342Q433,383,389.5,383Q346,383,326,403.5Q306,424,278,413Q250,402,217.5,425.5Q185,449,171.5,413Q158,377,124.5,371Q91,365,68.5,340.5Q46,316,26,283Q6,250,56.5,226.5Q107,203,108,175Q109,147,126.5,125.5Q144,104,164.5,77.5Q185,51,217.5,73Q250,95,284.5,67Q319,39,333.5,77Q348,115,398.5,110Q449,105,468,139Q487,173,475.5,211.5Q464,250,435.5,275.5Z;
+
+     M437,285Q465,320,458,358Q451,396,414.5,411.5Q378,427,338,412Q298,397,274,400Q250,403,226,400.5Q202,398,163.5,410Q125,422,89,407.5Q53,393,39,358Q25,323,59,286.5Q93,250,60,213.5Q27,177,75,167.5Q123,158,137.5,136.5Q152,115,171.5,91Q191,67,220.5,37Q250,7,274,54.5Q298,102,318.5,115Q339,128,388.5,120.5Q438,113,462,143Q486,173,447.5,211.5Q409,250,437,285Z;
+     
+     M417.5,273.5Q395,297,409,336.5Q423,376,397,396.5Q371,417,339.5,422.5Q308,428,279,445Q250,462,213,469.5Q176,477,161,435.5Q146,394,107,388Q68,382,61.5,347.5Q55,313,73.5,281.5Q92,250,96,225.5Q100,201,84.5,160Q69,119,101,104Q133,89,158,67Q183,45,216.5,61Q250,77,286,53Q322,29,356.5,42.5Q391,56,397,97.5Q403,139,425.5,162.5Q448,186,444,218Q440,250,417.5,273.5Z;
+     
+     M476,288.5Q486,327,456,352.5Q426,378,385,379Q344,380,327,407Q310,434,280,464Q250,494,220.5,463.5Q191,433,158,427.5Q125,422,104.5,396.5Q84,371,49,349Q14,327,22,288.5Q30,250,67.5,226.5Q105,203,99,169.5Q93,136,114.5,114.5Q136,93,162,75.5Q188,58,219,32.5Q250,7,279,39.5Q308,72,340.5,76.5Q373,81,395.5,104.5Q418,128,437.5,155.5Q457,183,461.5,216.5Q466,250,476,288.5Z;
+
+     M441,283Q452,316,418,331.5Q384,347,373.5,376.5Q363,406,336.5,420Q310,434,280,460.5Q250,487,222.5,453Q195,419,159.5,421Q124,423,108.5,393.5Q93,364,66.5,341Q40,318,47,284Q54,250,78,226Q102,202,104,173.5Q106,145,104.5,96.5Q103,48,151,71Q199,94,224.5,56Q250,18,276.5,52.5Q303,87,337.5,84Q372,81,405,97.5Q438,114,444.5,149.5Q451,185,440.5,217.5Q430,250,441,283Z;
+
+    M437.5,280Q435,310,419,335.5Q403,361,391,394.5Q379,428,347,438.5Q315,449,282.5,452.5Q250,456,214.5,462.5Q179,469,170,420.5Q161,372,144,355.5Q127,339,109.5,320Q92,301,48.5,275.5Q5,250,19,214.5Q33,179,50.5,148.5Q68,118,111.5,118.5Q155,119,166,72.5Q177,26,213.5,14.5Q250,3,284,22.5Q318,42,342,66Q366,90,371.5,124Q377,158,422,169Q467,180,453.5,215Q440,250,437.5,280Z;
+    
+     M413,276.5Q412,303,400,326.5Q388,350,392,400.5Q396,451,352.5,442Q309,433,279.5,418Q250,403,226.5,399.5Q203,396,165.5,407Q128,418,128,378Q128,338,96,324Q64,310,42.5,280Q21,250,39.5,219Q58,188,87.5,170.5Q117,153,114.5,106.5Q112,60,157.5,83Q203,106,226.5,57Q250,8,277.5,45Q305,82,324,102.5Q343,123,396.5,114Q450,105,455,143.5Q460,182,437,216Q414,250,413,276.5Z;
+
+     M435.5,275.5Q407,301,420,342Q433,383,389.5,383Q346,383,326,403.5Q306,424,278,413Q250,402,217.5,425.5Q185,449,171.5,413Q158,377,124.5,371Q91,365,68.5,340.5Q46,316,26,283Q6,250,56.5,226.5Q107,203,108,175Q109,147,126.5,125.5Q144,104,164.5,77.5Q185,51,217.5,73Q250,95,284.5,67Q319,39,333.5,77Q348,115,398.5,110Q449,105,468,139Q487,173,475.5,211.5Q464,250,435.5,275.5Z
+     ">
+    </path>
+
+    <clipPath id="shape">
+      <use href="#blob"></use>
+    </clipPath>
+  </defs>
+
+  <image 
+    x="0" 
+    y="0" 
+    width="100%" 
+    height="100%" 
+    clip-path="url(#shape)" 
+    href="./images/img2.jpg" 
+    preserveAspectRatio="none" />
+</svg>
+
+</div>
+<div class="info">
+   <strong>Greetings! I’m Saksham,</strong> an aspiring engineer currently pursuing B.Tech in ECE. With a passion for full-stack web development, IoT, and solving real-world problems through technology, I’m always eager to explore new challenges and innovate. This portfolio highlights both my achievements and aspirations. Let’s connect and collaborate!
+</div>
+    <div class="blockmain">
+    <div class="blockset">
+      <div class="blocks">
+         <img width="50" height="50" src="https://img.icons8.com/parakeet-line/48/visible.png" alt="visible"/> 
+         <strong>Visual <br> Asthetic</strong>
+      </div>
+      <div class="blocks">
+        <img width="50" height="50" src="https://img.icons8.com/ios/50/for-experienced.png" alt="for-experienced"/>
+        <strong>Critical <br> Thinking</strong>
+      </div>
+      <div class="blocks">
+        <img width="50" height="50" src="./images/organize.png" alt="page">
+        <strong> Orgainzed</strong>
+      </div>
+      <div class="blocks">
+         <img width="50" height="50" src="./images/creativity.png" alt="brainbulb">
+         <strong> Creativity</strong>
+      </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="skills " id="skill">
+    <span class="enigma"  >Skills</span>
+    <div class="skillset">
+      <div class="tools">
+       
+        <svg width = "200px " height = "200px">
+        <circle class="firstcircle circle1" r = 70 cx = 100 cy = 100  />
+        </svg>
+         <img width="96" height="96" class ="img1"  src="https://img.icons8.com/color/96/figma--v1.png" alt="figma--v1"/>
+        <div class="numb"></div>
+          <input type="number"class ="inp inpts" min="0"max = "100" step="1" placeholder=" percentage of completion" style=" border: 3px solid   #a259ff;" >
+      </div>
+      <div class="tools">
+      <svg width = "200px " height = "200px">
+            
+      <circle class="firstcircle circle2" r = 70 cx = 100 cy = 100  />
+        </svg>
+        <img width="96" height="96" class ="img2" src="https://img.icons8.com/color/96/html-5--v1.png" alt="html-5--v1"/>
+        <div class="numb"></div>
+        <input type="number"class = "inp inpts" min="0"max = "100" step="1"  placeholder=" percentage of completion" style=" border: 3px solid    #f06529;"  >
+
+
+         
+      </div>
+      <div class="tools">
+        <img width="96" height="96" class ="img3" class ="imgp"src="https://img.icons8.com/stickers/100/css3.png" alt="css3"/>
+         <svg width = "200px " height = "200px">
+        <circle class="firstcircle circle3" r = 70 cx = 100 cy = 100  />
+        </svg>
+                <div class="numb"></div>
+        <input type="number"class = "inp inpts" min="0"max = "100" step="1"     placeholder=" percentage of completion" style=" border: 3px solid   #264de4;"   >
+      </div>
+      <div class="tools">
+        <img width="96" height="96"class ="img4" src="./images/javascript.png" alt="javascript"/>
+         <svg width = "200px " height = "200px">
+        <circle class="firstcircle circle4" r = 70 cx = 100 cy = 100  />
+        </svg>
+          <div class="numb"></div>
+        <input type="number"class = "inp inpts" min="0"max = "100" step="1"    placeholder=" percentage of completion" style=" border: 3px solid   #f0db4f;"  >
+      </div>
+      <div class="tools">
+        <img width="96" height="96" class ="img5"src="https://img.icons8.com/external-colored-outline-lafs/64/external-IoT-iiot-colored-outline-lafs.png" alt="external-IoT-iiot-colored-outline-lafs"/>
+         <svg width = "200px " height = "200px">
+        <circle class="firstcircle circle5" r = 70 cx = 100 cy = 100  />
+        </svg>
+                <div class="numb"></div>
+        <input type="number"class = "inp inpts" min="0"max = "100" step="1"    placeholder=" percentage of completion" style=" border: 3px solid   #ccc;"   >
+      </div>
+      <div class="tools">
+        <img width="96" height="96" src="https://img.icons8.com/color/96/tailwindcss.png" alt="tailwindcss"/>
+         <svg width = "200px " height = "200px">
+        <circle class="firstcircle circle6" r = 70 cx = 100 cy = 100  />
+        </svg>
+                <div class="numb"></div>
+        <input type="number"class = "inp inpts" min="0"max = "100" step="1"    placeholder="percentage of completion"  style=" border: 3px solid   #31A8FF;"   >
+      </div>
+    </div>
+  </div>
+  <!-- products -->
+       <span class ="enigma">Fashion Enigma</span>
+   <div class="pdcatalog" id = pds>
+
+      <div class="main-boxofpd">
+       <div class="products">
+    <div class="front-items">
+      <div class="imagesofpd">
+        <img src="https://i.pinimg.com/736x/d5/c1/41/d5c1410a48b14a15b0071d535f3588e9.jpg" alt="nightlight">
+      </div>
+      <div class="back-cont colorsofback1">
+        <div class="descrip">
+          <h2>Sunscreen</h2>
+          <p>Stay protected with our lightweight, SPF-rich sunscreen. Non-greasy, fast-absorbing formula shields your skin from harmful UV rays—perfect for daily skincare</p>
+           <a href="#" class="btns">Buy Now</a>
+        </div>
+      </div>
+    </div>
+   </div>
+   </div>
+   <div class="main-boxofpd">
+       <div class="products">
+    <div class="front-items">
+      <div class="imagesofpd">
+        <img src="https://i.pinimg.com/736x/96/85/f5/9685f59454be32e6cceb1f236f0fffcf.jpg" alt="nightlight">
+      </div>
+      <div class="back-cont colorsofback2">
+        <div class="descrip">
+          <h2>Utensils</h2>
+          <p>Elegant ceramic utensils that combine durability and beauty. Heat-resistant, non-toxic, and stylish—ideal for modern kitchens.</p>
+           <a href="#" class="btns">Buy Now</a>
+        </div>
+      </div>
+    </div>
+   </div>
+   </div>
+    <div class="main-boxofpd">
+       <div class="products">
+    <div class="front-items">
+      <div class="imagesofpd">
+        <img src="https://i.pinimg.com/1200x/78/39/75/7839758c41dc1b634f3b7cab3be5aa34.jpg" alt="nightlight">
+      </div>
+      <div class="back-cont colorsofback3">
+        <div class="descrip">
+          <h2>Apple Vision Pro</h2>
+          <p>Experience the future with Apple Vision Pro. Immersive spatial computing, ultra-clear visuals, and next-gen interaction redefine how you see, work, and connect.</p>
+           <a href="#" class="btns">Buy Now</a>
+        </div>
+      </div>
+    </div>
+   </div>
+   </div>
+       <div class="main-boxofpd">
+       <div class="products">
+    <div class="front-items">
+      <div class="imagesofpd">
+        <img src="https://i.pinimg.com/736x/20/77/f0/2077f09ce1624249826c2e0bc21b904d.jpg" alt="nightlight">
+      </div>
+      <div class="back-cont colorsofback4">
+        <div class="descrip">
+          <h2>Sneakers</h2>
+          <p>Step up your style game with our bold new red sneakers. Comfortable, durable, and trendy—perfect for streetwear lovers and everyday fashion statements.</p>
+           <a href="#" class="btns">Buy Now</a>
+        </div>
+      </div>
+    </div>
+   </div>
+   </div>
+       <div class="main-boxofpd">
+       <div class="products">
+    <div class="front-items">
+      <div class="imagesofpd">
+        <img src="https://i.pinimg.com/736x/38/92/74/389274eca9bf13f9cd85bec5e8b805ca.jpg" alt="nightlight">
+      </div>
+      <div class="back-cont colorsofback5">
+        <div class="descrip">
+          <h2>Bottle</h2>
+          <p>Sleek, leakproof water bottle with temperature retention. Stay hydrated on the go with this stylish and durable companion for workouts, travel.</p>
+           <a href="#" class="btns">Buy Now</a>
+        </div>
+      </div>
+    </div>
+   </div>
+   </div>
+       <div class="main-boxofpd">
+       <div class="products">
+    <div class="front-items">
+      <div class="imagesofpd">
+        <img src="https://i.pinimg.com/736x/ee/58/84/ee5884cfe04784ba08a2e420180ad1ca.jpg" alt="nightlight">
+      </div>
+      <div class="back-cont colorsofback6">
+        <div class="descrip">
+          <h2>Hoodie</h2>
+          <p>Cozy up in this premium hoodie made for all-day comfort. Soft, stylish, and perfect for layering—your go-to look for casual and relaxed vibes.</p>
+           <a href="#" class="btns">Buy Now</a>
+        </div>
+      </div>
+    </div>
+   </div>
+   </div>
+       <div class="main-boxofpd">
+       <div class="products">
+    <div class="front-items">
+      <div class="imagesofpd">
+        <img src="https://i.pinimg.com/736x/42/4c/f9/424cf978bcf32fec77f5794bdcbf333a.jpg" alt="nightlight">
+      </div>
+      <div class="back-cont colorsofback7">
+        <div class="descrip">
+          <h2>AirPods Max</h2>
+          <p>Immerse in high-fidelity audio with AirPods Max. Active noise cancellation, spatial audio, and luxurious comfort—designed to elevate your listening experience like never before.</p>
+           <a href="#" class="btns">Buy Now</a>
+        </div>
+      </div>
+    </div>
+   </div>
+   </div>
+       <div class="main-boxofpd">
+       <div class="products">
+    <div class="front-items">
+      <div class="imagesofpd">
+        <img src="https://i.pinimg.com/736x/b3/e6/ae/b3e6aeaa47709e1e4d23a7b2776b9b12.jpg" alt="nightlight">
+      </div>
+      <div class="back-cont colorsofback8">
+        <div class="descrip">
+          <h2>iPhone 16 Pro</h2>
+          <p>Meet the iPhone 16 Pro: sleek design, A18 chip, advanced cameras, and AI-powered features. The future of smartphones is faster, smarter, and more powerful.</p>
+           <a href="#" class="btns">Buy Now</a>
+        </div>
+      </div>
+    </div>
+   </div>
+   </div>
+   </div>
+   <!-- Responsive crousal from javascript -->
+    <span class="enigma">My Works</span>
+    <div class="firstcr" id="project">
+      <button type="button" class="rightchevron" ><i class="fa-solid fa-chevron-right"></i></button>
+      <button type="button" class="leftchevron"><i class="fa-solid fa-chevron-left"></i></button>
+      <div class="imgcr">
+      <img class="projects" src="./images/image1.png" alt="">
+      <img class="projects" src="./images/image2.png" alt="">
+      <img class="projects" src="./images/image3.png" alt="">
+      <img class="projects" src="./images/image4.png" alt="">
+      <img class="projects" src="./images/image5.png" alt="">
+      <img class="projects" src="./images/image6.png" alt="">
+
+      </div>
+    </div>
+
+    <div class="footer" id = "contactme">
+      <span class="about">About Me
+        <br>
+        Manifestation of my idea that i created here 
+      </span>
+      <div class="social-list">
+         <div class="icon-group">
+            <i class="fa-brands fa-youtube"></i>
+            <span class="icon-name">
+              <a href="#" target="_blank" rel="noopener noreferrer">Youtube</a>
+            </span>
+            <span class="bg-color"></span>
+        </div>
+        <div class="icon-group">
+            <i class="fa-brands fa-github"></i>
+            <span class="icon-name">
+              <a href="#" target="_blank" rel="noopener noreferrer">Github</a>
+            </span>
+            <span class="bg-color"></span>
+        </div>
+        <div class="icon-group">
+            <i class="fa-brands fa-x-twitter"></i>
+            <span class="icon-name">
+               <a href="#" target="_blank" rel="noopener noreferrer">X</a>
+            </span>
+            <span class="bg-color"></span>
+        </div>
+        <div class="icon-group">
+            <i class="fa-brands fa-facebook"></i>
+            <span class="icon-name">
+              <a href="#" target="_blank" rel="noopener noreferrer">Facebook</a>
+            </span>
+            <span class="bg-color"></span>
+        </div>
+      </div>
+       
+    </div>
+</body>
+</html>
